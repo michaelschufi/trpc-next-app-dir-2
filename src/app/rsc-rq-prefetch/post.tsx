@@ -16,9 +16,9 @@ export function Post() {
   return (
     <div>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <span>Title: {latestPost.title}</span>
-        <span>Content: {latestPost.content}</span>
-        <span>Created At: {latestPost.createdAt.toLocaleString()}</span>
+        <span>Title: {latestPost?.title}</span>
+        <span>Content: {latestPost?.content}</span>
+        <span>Created At: {latestPost?.createdAt.toLocaleString()}</span>
       </div>
       <form
         style={{
