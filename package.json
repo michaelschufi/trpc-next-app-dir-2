@@ -1,0 +1,42 @@
+{
+  "name": "examples-next-app-dir",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test:e2e": "playwright test",
+    "test-dev": "start-server-and-test dev 3000 test:e2e",
+    "test-start": "start-server-and-test start 3000 test:e2e"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.9.11",
+    "@js-temporal/polyfill": "^0.4.4",
+    "@tanstack/react-query": "^5.45.0",
+    "@tanstack/react-query-devtools": "^5.45.0",
+    "@trpc/client": "npm:@trpc/client@next",
+    "@trpc/next": "npm:@trpc/next@next",
+    "@trpc/react-query": "npm:@trpc/react-query@next",
+    "@trpc/server": "npm:@trpc/server@next",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "next": "^14.1.4",
+    "next-auth": "^4.22.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.43.3",
+    "react-hot-toast": "^2.4.1",
+    "server-only": "^0.0.1",
+    "superjson": "^1.12.4",
+    "trpc-api": "link:./src/trpc",
+    "typescript": "^5.5.0",
+    "zod": "^3.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.26.1",
+    "start-server-and-test": "^1.12.0",
+    "wait-port": "^1.0.1"
+  }
+}
